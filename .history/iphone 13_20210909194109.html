@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAC CENTER</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="iphone 13.css"/> <!--liên kết file ccs-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="btLon.js" crossorigin="anonymous"></script>
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+      
+              $("#gototop").hide();
+      
+              $(window).scroll(function(){
+                if($(this).scrollTop() >= 50){
+                    $("nav").css({
+                        "position":"fixed",
+                        "right" : 0,
+                        "left":0,
+                        "top" :0,
+                        "z-index" :999,
+                        "opacity" :0.8
+                        
+                    })
+                }
+                else{
+                    $("nav").css({
+                        "position":"relative",
+                        "opacity" :1
+                    })
+                }
+                if($(this).scrollTop() >= 50)
+                    $("#gototop").show("slow")
+                else
+                    $("#gototop").hide("slow")
+              })
+
+
+
+              $("#gototop").click(function(){
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 1000);
+              })
+      
+            })
+          </script>
+
+          <script>
+              $(document).ready(function(){
+                  $(window).scroll(function(){
+                      if()
+                  })
+              })
+          </script>
+
+          <script>
+              $(document).ready(function(){
+
+                    $(".tab-content div:not(:first-child)").hide()
+
+                    $("ul.tab a").click(function(){
+                        event.preventDefault()
+                        //xu ly tab
+                        $("ul.tab a").removeClass("active")
+                        $(this).addClass("active")
+
+                        //xu ly content
+                        var tab=$(this).attr("href")
+                        $(".tab-content div").hide()
+                        $(tab).show()
+                    })
+              })
+          </script>
+    
+    </head>
+    <body id="demo" >
+        <nav class="menuchinh">
+            <div class="animate__animated animate__fadeInLeftBig">
+                <div class="logo1">
+                    <a href="http://127.0.0.1:5501/index.html#demo" id="logo"><img src="logo/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown">
+                <div class="menu">
+                    <ul class="menucha">
+                        <li class="sub"><a href="http://127.0.0.1:5501/index.html#demo" target ="_blank" >TRANG CHỦ</a></li>
+                        <li class="sub">
+                            <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank">SẢN PHẨM</a>   
+                            <ul class="menu1 sub1">
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">MACBOOK</a></li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IMAC</a></li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IPHONE</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IPAD</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">AIRPODS</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">APPLE WATCH</a> </li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <a href="http://127.0.0.1:5501/btlon3.html" target="_blank" >LIÊN HỆ</a>
+                            <ul class="menu1 sub1">
+                                <li><a href="http://127.0.0.1:5501/btlon3.html">HỖ TRỢ</a></li>
+                                <li><a href="http://127.0.0.1:5501/btlon6.html?">THANH TOÁN</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub"><a href="http://127.0.0.1:5501/btLon1.html" target ="_blank">ĐĂNG NHẬP</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="animate__animated animate__fadeInRightBig">
+                <div class="iconmenu">
+                    <li><a href="http://127.0.0.1:5501/btLon2.html#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="http://127.0.0.1:5501/btLon1.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="http://127.0.0.1:5501/btlon6.html?"><i class="fas fa-shopping-cart"></i></a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        
+        <label for="nav_input-mobile" class="nav_bars">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" class="nav_input" id="nav_input-mobile">
+        
+        <label for="nav_input-mobile" class="overley"></label>
+
+        <div class="nav_mobile">
+            <label for="nav_input-mobile" class="nav_close">
+                <i class="fas fa-times"></i>
+            </label>
+            
+            <ul class="nav_mobile-list">
+                <li>
+                    <a class="nav_logo" href="http://127.0.0.1:5501/index.html#demo"><img src="logo/logo.jpg" width="110px" height="70px"></a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/index.html#demo" class="nav_mobile-link">TRANG CHỦ</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon2.html#" class="nav_mobile-link">SẢN PHẨM</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon2.html#" class="nav_mobile-link">LIÊN HỆ</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon1.html" class="nav_mobile-link">ĐĂNG NHẬP</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="gototop">
+            <a id="go" href="javascript:;" ><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="text">
+            <h4>iPhone 13</h4>
+            <p>Dự kiến ra mắt 14/9, 4 phiên bản, 2 màu nổi bật cam và hồng, giá khoảng 16 - 35 triệu</p>
+        </div>
+        <div class="text1">
+            <p>Learn more <i class="far fa-angle-right"></i></p>
+            <p>Buy <i class="far fa-angle-right"></i></p>
+        </div>
+        <div class="poster">
+            <img src="iphone 13/poster1.jpg">
+        </div>
+       
+        <div class="poster1">
+            <img src="https://ddqfrro26xobj.vcdn.cloud/uploads/2021/06/Apple-iPhone-13-4-1.jpeg">
+        </div>
+        
+
+
+       <section>
+           <ul class="tab">
+                <li><a href="#tab1" class="active">Các phiên bản, màu sắc, giá bán</a></li>
+                <li><a href="#tab2">Thiết kế và cấu hình vượt trội</a></li>
+                <li><a href="#tab3">Những tính năng nổi bật</a></li>
+           </ul>
+
+           <div class="tab-content">
+                <div id="tab1">
+                    <section class="text_main1">
+                        <section class="text_tab1">
+                            <h1>
+                                1. Các phiên bản, màu sắc, giá bán của iPhone 13
+                            </h1>
+                            <p>
+                                Dòng iPhone 2021 sẽ trông tương tự như dòng iPhone 2020, với bốn thiết bị có kích thước bao gồm 5.4 inch, 6.1 inch và 6.7 inch. Trong đó 2 chiếc iPhone là mẫu "Pro" cao cấp hơn và hai chiếc được định vị là có chi phí thấp hơn, thiết bị hợp lý hơn là iPhone 13 và iPhone 13 mini.
+                            </p>
+                            <p>
+                                Lưu ý:<br>
+                                <ul>
+                                    <li>(*) Giá bán của iPhone 13 Pro Max đang được dự đoán là 1.099 USD (khoảng 25 triệu đồng) cho bản 128 GB.</li>
+                                    <li>Hiện tại những thông tin về iPhone 13 Pro Max trong bài này đang dựa trên những thông tin rò rỉ chính xác nhất. Ngay khi iPhone 13 Pro Max chính thức ra mắt, mình sẽ cập nhật lại nội dung trong bài viết này, các bạn có thể yên tâm theo dõi nhé!</li>
+        
+                                </ul>
+                            </p>
+                        </section>
+
+                        <section class="image_tab1">
+                            <img src="iphone 13/image2.png">
+                        </section>
+                    </section>
+                    
+                    <section class="text_main2">
+                            
+                        <section class="image_tab2">
+                            <img src="iphone 13/anh2.png">
+                        </section>
+
+                        <section  class="text_tab2">
+                            <p>Nhà phân tích Dan Ives của Wedbush gần đây đã tiết lộ một số tính năng được mong đợi của dòng Apple iPhone 13. Điều thú vị là trong báo cáo này, cũng dự đoán thêm ngày ra mắt của dòng iPhone mới.</p>
+                            <p>Phiên bản <b>màu da cam</b> (Sunset Gold) đón nhận được sự quan tâm của iFan, khi nhiều thông tin về dòng iPhone 13 màu da cam đã đem lại cảm giác đặc biệt thu hút người dùng so với dòng iPhone màu vàng trước đây. </p>     
+                            <p>iPhone 2021 có khả năng được xác định là phiên bản cải tiến của iPhone 12 hiện tại. Apple cũng đang dự tính điều chỉnh màu Graphite và tạo cho nó một lớp đen mờ trên iPhone 13 Pro.</p>
+                            <p>Đồng thời, hãng cũng tiết lộ 2 màu mới xuất hiện trên iPhone 13 Pro và iPhone 13 Pro Max là <b>màu da cam</b> (Sunset Gold) và <b>màu vàng hồng</b> (Rose Gold), bên cạnh 2 màu truyền thống là đen và trắng.</p>
+                            <p>Đối với phiên bản <b>màu vàng hồng</b> (Rose Gold) đầy huyền bí, sang trọng đặc biệt thu hút các iFan là phái nữ. Với đường nét, góc cạnh sắc bén và sản phẩm này hứa hẹn sẽ là phiên bản chủ đạo của Apple.</p>
+                        </section>
+
+                    </section>
+                    
+                    <section class="text_main3">
+
+                        <section class="text_tab3">
+                            <h1>Thiết kế iPhone 13 Pro Max sẽ có notch tai thỏ nhỏ. iPhone 13 Pro Max năm nay sẽ gây hot?</h1>
+                            <p>Dựa trên những hình ảnh, video concept rò rỉ đến thời điểm hiện tại, phong cách thiết kế của iPhone 13 Pro Max có nhiều nét tương đồng với iPhone 12 Pro Max. Thiết bị vẫn sẽ sở hữu khung viền vuông vức, mặt lưng kính nhám cùng màn hình tai thỏ nằm ở phía trước.</p>
+                            <section class="image_tab3">
+                                <img src="iphone 13/anh3.png">
+                            </section>
+                            <p>Tuy nhiên, để tăng độ nhận diện cho sản phẩm mới thì Apple có thể sẽ cung cấp thêm 2 phiên bản màu sắc mới lạ cho iPhone 13 Pro Max, đó là màu cam (Sunset Gold) và màu hồng (Rose Pink). </p>
+                            <p>Thực sự mỗi người sẽ có một sở thích riêng về màu sắc nhưng cá nhân mình rất ấn tượng với 2 tùy chọn màu sắc mới là màu cam (Sunset Gold) và màu hồng (Rose Pink) của iPhone 13 Pro Max. Mình rất mong chờ 2 phiên bản màu mới trên iPhone 13 Pro Max thực tế sẽ trông như thế nào, hy vọng là khớp với những hình ảnh render, video concept rò rỉ trong thời gian gần đây.</p>
+                            <p>Đặc biệt khi mới đây, concept về màu Sunset Gold trên iPhone 13 Pro Max lại xuất hiện càng khiến mình mong chờ hơn về phiên bản màu này tren chiếc smartphone cao cấp nhất nhà Táo. Các đường nét, góc cạnh với cách phối màu cam cuốn hút hứa hẹn sẽ trở thành phiên bản màu chủ đạo trong năm nay của Apple.</p>
+                            <section class="image_tab4">
+                                <img src="iphone 13/anh5.png">
+                            </section>
+                            <p>Ngoài ra, phần notch tai thỏ của iPhone 13 Pro Max năm nay sẽ được làm bé hơn đôi chút so với iPhone 12 Pro Max. Đã có rất nhiều bản concept hay mô hình của iPhone 13 Pro Max cũng đã phần nào khẳng định điều này. Cá nhân mình thì đánh giá cao sự thay đổi này bởi vì theo mình thì đây là việc mà Apple phải làm ngay từ thế hệ iPhone 12 Series chứ không phải là đến dòng iPhone 13 mới thực hiện.</p>
+                            <p>Kiểu dáng của iPhone 13 series dự kiến là một trong những nâng cấp rõ rệt nhất trong năm nay. Thiết bị này sẽ được trang bị màn hình notch nhỏ hơn trước, giúp người dùng trải nghiệm không gian hiển thị lớn, nhiều nội dung hơn. Phần viền màn hình cũng được làm mỏng đi, tạo cảm giác hấp dẫn cho sản phẩm.</p>
+                            <p>Ở mặt sau, cụm camera sẽ to hơn khá nhiều so với iPhone 12 series. Riêng 2 phiên bản iPhone 13 mini và iPhone 13 sẽ chuyển sang bố trí 2 camera sau nằm chéo nhau. Sự thay đổi này sẽ tạo nên nét riêng biệt so với tiền nhiệm.</p>
+                            <section class="image_tab6">
+                                <img src="https://cdn.tgdd.vn/Files/2021/03/15/1335526/iphone13pro7phienbanmau-_1550x872-800-resize.jpg">
+                            </section>
+                            <p>Song song đó, màn hình iPhone 13 cũng sẽ được trang bị thêm tính năng Always On Display. Nhờ vậy người dùng có thể dễ dàng xem các thông báo nhanh mà không cần phải mở khóa màn hình. Phiên bản iPhone 13 Pro và Pro Max sẽ được trang bị màn hình 120 Hz.</p>
+                            <p>Gần như chắc chắn iPhone 13 series sẽ được trang bị con chip Apple A15 Bionic thay vì Apple M1 như nhiều tin đồn khác. Dòng chip Apple A series vẫn có hiệu năng mạnh mẽ khi so với các dòng chip khác trên thị trường. Chưa kể, A15 Bionic được TSMC sản xuất trên tiến trình 5nm+ thay vì 5nm như trên A14 Bionic. Nhờ vậy hiệu năng cũng như khả năng tiết kiệm điện trên iPhone 13 sẽ tốt hơn nhiều khi so với dòng iPhone 12.</p>
+                            <p>Dòng iPhone 13 có dung lượng pin lớn hơn so với dòng iPhone 12 và sẽ được bổ sung tính năng mới là sạc ngược không dây, tuy nhiên sẽ chỉ khả dụng đối với các thiết bị của Apple như AirPods, Apple Watch…</p>
+                            <section class="image_tab5">
+                                <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2020/08/iPhone-12-FBBBB.jpg">
+                            </section>
+                            <p>Hiện tại, ghi nhận ở các đại lý ủy quyền chính thức của Apple tại Việt Nam như Di Động Việt (didongviet.vn), các phiên bản dự kiến của iPhone 13 series được cập nhật liên tục. Về giá bán, nhiều thông tin rò rỉ cho thấy phiên bản rẻ nhất là 13 mini sẽ được lên kệ với mức giá là 699 USD (khoảng 15,9 triệu đồng), iPhone 13 sẽ được bán với giá khởi điểm 799 USD (khoảng 18,2 triệu đồng). Trong khi đó, 2 phiên bản 13 Pro và 13 Pro Max có giá lần lượt 999 USD (khoảng 22,8 triệu đồng) và 1.099 USD (khoảng 25,1 triệu đồng).</p>
+                        
+                        </section>
+
+                        
+
+                    </section>
+                
+                    
+                
+                
+                </div>
+                <div id="tab2">
+                    <h1>
+                        1. Thiết kế và cấu hình vượt trội của iPhone 13
+                    </h1>
+                    <p>
+                        Theo trang Mac Otakara của Nhật Bản, những chiếc iPhone mới sẽ có cùng kích thước với các mẫu iPhone 12, nhưng độ dày có thể tăng thêm khoảng 0,26 mm. Các mẫu iPhone 13 cũng được cho là sẽ nặng hơn một chút do có pin lớn hơn.<br>Nhà phân tích nổi tiếng Ming-Chi Kuo tuyên bố rằng Apple sẽ xuất xưởng iPhone 13 với notch (tai thỏ) nhỏ gọn hơn, tận dụng không gian tiết kiệm được để tăng dung lượng pin cho máy.
+                    </p>
+                    
+                </div>
+                <div id="tab3">Hello c++</div>
+           </div>
+       </section> 
+
+
+        <div class="text-center">
+            <img src="dangnhap/image1.jpg"/>
+            <img src="dangnhap/image2.jpg"/>
+            <img src="dangnhap/image3.jpg"/>
+            <img src="dangnhap/image4.jpg"/>
+        </div>
+
+
+        <hr id="gachchan">
+        <div class="note">
+            <div class="note1">
+                <p><b>APPLE STORE</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>MacBook Pro</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>iMac</p></a>
+                <a href="http://127.0.0.1:5501/btLon4.html#"><p>iPhone</p></a>
+                <a href="http://127.0.0.1:5501/btLon4.html#"><p>iPad, iPad Pro</p></a>
+                <a href="http://127.0.0.1:5501/btLon5.html"><p>Apple Watch</p></a>
+                <a href="http://127.0.0.1:5501/btLon5.html"><p>AirPods</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>ACCESSORIES</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mac Accessories</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mice & Keyboards</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mousepads</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Health & Home Devices</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Webcam & Headset</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Stand for MacBook</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>AUDIO SYSTEM</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>JBL</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Bose</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Sony</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Ultimate Ears</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#" ><p>Harman Kardon</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Marshall</p></a>
+            </div>
+
+            
+            <div class="note1">
+                <p><b>HEADPHONE</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe JBL</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Bose</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Skull Candy</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Audio Technica</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#" ><p>Tai nghe Sudio</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Jabra</p></a>
+            </div>
+
+
+            <div class="note1">
+                <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                <a href=""><p>Chính sách bảo hành</p></a>
+                <a href=""><p>Chính sách đổi trả</p></a>
+                <a href=""><p>Chính sách bảo mật thông tin</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Dịch vụ sửa chữa</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Vận chuyển - Thanh toán</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Liên hệ</p></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="gioithieu">
+            <div class=logogt1>
+                <div class="logogt">
+                    <img src="logo/logo_gioithieu.png" />
+                </div>
+                <div class="textgt">
+                    <p>Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                    <p>Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                </div>
+            </div>
+            
+               
+            <div class="hotro" >
+                <ul class="hotro1">
+                    <li>
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                        <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                        <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                        <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                    </li>
+                    
+                    <li>
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                        <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                        <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                    </li>
+                    <li>
+                        <h3> Mạng xã hội</h3>
+                        <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                        <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                        <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                </ul>
+
+                <div class="icongt">
+                    <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

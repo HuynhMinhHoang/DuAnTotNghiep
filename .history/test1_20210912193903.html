@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAC CENTER</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="test1.css"/> <!--liên kết file ccs-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="btLon.js" crossorigin="anonymous"></script>
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+      
+              $("#gototop").hide();
+      
+              $(window).scroll(function(){
+                if($(this).scrollTop() >= 50){
+                    $("nav").css({
+                        "position":"fixed",
+                        "right" : 0,
+                        "left":0,
+                        "top" :0,
+                        "z-index" :999,
+                        "opacity" :0.8
+                        
+                    })
+                }
+                else{
+                    $("nav").css({
+                        "position":"relative",
+                        "opacity" :1
+                    })
+                }
+                if($(this).scrollTop() >= 50)
+                    $("#gototop").show("slow")
+                else
+                    $("#gototop").hide("slow")
+              })
+
+
+
+              $("#gototop").click(function(){
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 1000);
+              })
+      
+            })
+          </script>
+        
+            
+
+        
+
+    </head>
+    <body style="font-family:Arial, Helvetica, sans-serif;" >
+        <nav class="menuchinh">
+            <div class="animate__animated animate__fadeInLeftBig">
+                <div class="logo1">
+                    <a href="http://127.0.0.1:5501/index.html#demo" id="logo"><img src="logo/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown">
+                <div class="menu">
+                    <ul class="menucha">
+                        <li class="sub"><a href="http://127.0.0.1:5501/index.html#demo" target ="_blank" >TRANG CHỦ</a></li>
+                        <li class="sub">
+                            <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank">SẢN PHẨM</a>   
+                            <ul class="menu1 sub1">
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">MACBOOK</a></li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IMAC</a></li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IPHONE</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">IPAD</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">AIRPODS</a> </li>
+                                <li><a href="http://127.0.0.1:5501/btLon2.html#">APPLE WATCH</a> </li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <a href="http://127.0.0.1:5501/btlon3.html" target="_blank" >LIÊN HỆ</a>
+                            <ul class="menu1 sub1">
+                                <li><a href="http://127.0.0.1:5501/btlon3.html">HỖ TRỢ</a></li>
+                                <li><a href="http://127.0.0.1:5501/btlon6.html?">THANH TOÁN</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub"><a href="http://127.0.0.1:5501/btLon1.html" target ="_blank">ĐĂNG NHẬP</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="animate__animated animate__fadeInRightBig">
+                <div class="iconmenu">
+                    <li><a href="http://127.0.0.1:5501/btLon2.html#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="http://127.0.0.1:5501/btLon1.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="http://127.0.0.1:5501/btlon6.html?"><i class="fas fa-shopping-cart"></i></a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        
+        <label for="nav_input-mobile" class="nav_bars">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" class="nav_input" id="nav_input-mobile">
+        
+        <label for="nav_input-mobile" class="overley"></label>
+
+        <div class="nav_mobile">
+            <label for="nav_input-mobile" class="nav_close">
+                <i class="fas fa-times"></i>
+            </label>
+            
+            <ul class="nav_mobile-list">
+                <li>
+                    <a class="nav_logo" href="http://127.0.0.1:5501/index.html#demo"><img src="logo/logo.jpg" width="110px" height="70px"></a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/index.html#demo" class="nav_mobile-link">TRANG CHỦ</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon2.html#" class="nav_mobile-link">SẢN PHẨM</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon2.html#" class="nav_mobile-link">LIÊN HỆ</a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:5501/btLon1.html" class="nav_mobile-link">ĐĂNG NHẬP</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="gallery-display-area">
+                <div class="gallery-wrap">
+                    <div class="image">
+                        <img src="http://www.maccenter.vn/Adv_Images/Banner-iPadPro-2021-2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="http://www.maccenter.vn/Adv_Images/Banner-HomePod-Mini-2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="http://www.maccenter.vn/Adv_Images/Banner-AppleTV-2021-2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="http://www.maccenter.vn/Adv_Images/Banner-iPadPro-2021-2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="http://www.maccenter.vn/Adv_Images/Banner-HomePod-Mini-2.jpg" />
+                    </div>             
+                </div>
+            </div>
+        </div>
+        <div class="poster_tablet">
+            <img src="trangchu/image1.jpg" />
+        </div>
+
+        <div id="gototop">
+            <a id="go" href="javascript:;" ><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+            <div class="sp">
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-MacBookPro-M1.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">MACBOOK PRO</h4>
+                        <p style="color: rgb(54, 54, 54);">Mỏng,sang nhẹ và hoàn toàn yên tĩnh
+                            với thiết kế "No Fan, No Noise" từ Apple</p>
+                    </div>
+                </div>
+                
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-MacBookAir-M1.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">MACBOOK AIR</h4>
+                        <p style="color: rgb(54, 54, 54);">Mỏng, nhẹ và hoàn toàn yên tĩnh
+                            với thiết kế "No Fan, No Noise" từ Apple</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="sp">
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-MacMini-M1.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">MAC MINI M1</h4>
+                        <p style="color: rgb(54, 54, 54);">Thiết kế nhỏ gọn hoàn toàn mạnh mẽ
+                            Tiếp cận Mac OS với chi phí không thế tốt hơn.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-iMac5K.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">IMAC</h4>
+                        <p style="color: rgb(54, 54, 54);">Đơn giản với thiết kế All-in-One từ Apple
+                            2 lựa chọn với màn hình 4K và 5K tuyệt đẹp.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sp3">
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-iPhone.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">IPHONE</h4>
+                        <p style="color: rgb(54, 54, 54);">iPhone 12, iPhone 12 Pro và Pro Max.<br>
+                            Đã sẵn sàng cho bạn trải nghiệm tại Mac Center</p>
+                    </div>
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-iPad.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">IPAD</h4>
+                        <p style="color: rgb(54, 54, 54);">Nhiều phiên bản về kích thước và dung lượng<br>
+                            iPad 10.2", iPad Air 10.9", iPad Pro 11" và iPad Pro 12.9"</p>
+                    </div>
+                    
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-AppleWatch-Series6.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">APPLE WATCH</h4>
+                        <p style="color: rgb(54, 54, 54);">Series 6, nhanh hơn, mỏng hơn, pin lâu hơn
+                            <br>Chống nước 50m, màn hình cảm ứng OLED mượt mà.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sp4">
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/MacFamily/Thumnail-Airpods2.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">AIRPODS</h4>
+                        <p style="color: rgb(54, 54, 54);">Chip xử lý Apple H1, kết nối Bluetooth<br>
+                            2 phiên bản sạc có dây và sạc không dây</p>
+                    </div> 
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/App_Images/AirTag-1pack.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">AIRTAG </h4>
+                        <p style="color: rgb(54, 54, 54);">Chip xử lý Apple H1, kết nối Bluetooth<br>
+                            2 phiên bản sạc có dây và sạc không dây</p>
+                    </div> 
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="http://www.maccenter.vn/App_Images/HomePod-Mini-White.jpg"/></a>
+                    </div>
+                    <div>
+                        <h4 id="tensp">HOMEPOD MINI</h4>
+                        <p style="color: rgb(54, 54, 54);">Âm thanh 360 độ, tích hợp 4 Microphones<br>
+                            Tương tác hoàn hảo với Touch Control hay Siri</p>
+                    </div> 
+                </div>
+            </div>
+        <div class="gif">
+            <video title="Mac-Center" muted="muted" width="1380" loop="true" autoplay="true" src="gif/gif1.mp4"></video>
+        </div>
+        <!--
+            key
+        -->
+        <div class="sphot">
+            <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><h1>SwitchEasy Dots Rainbow</h1></a>
+        </div>
+
+        <div class="sphot1">
+            <p>Một dòng Case chuyên biệt cho MacBook, được thiết kế với họa tiếc chấm bi độc đáo từ SwitchEasy</p>
+            <p>Chất liệu Matte giúp hạn chế vân tay, bụi bẩn ... bảo vệ bề mặt và các góc cạnh cho MacBook một cách tuyệt vời!</p>
+        </div>
+
+        <div class="menu3">
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image8.jpg" /></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">Lót phím MacBook 2020 JCPal (Clear)</h4>
+
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image9.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">Dán MacBook JCPAL 5-in-1 (Space Gray)</h4>
+                    
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image10.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">Stand JCPAL for Mac</h4>
+
+                </div>
+            </div>
+        </div>
+
+        <!--
+            airpod max
+        -->
+        <div class="sphot">
+            <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><h1>AirPods Max</h1></a>
+        </div>
+
+        <div class="sphot1">
+            <p>Giờ đây, bạn hoàn toàn có thể dễ dàng trải nghiệm chất âm thực tế AirPods Max tại Mac Center</p>
+            <p>Hiện tại, AirPods Max gồm có 5 màu: Space Gray, Silver, Sky Blue, Pink và Green.</p>
+        </div>
+        
+        <div class="menu3">
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image11.jpg" /></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">Bose Portable Home Speaker</h4>
+
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image12.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">AirPods Max (Pink)</h4>
+                    
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="http://127.0.0.1:5501/btLon2.html#" target="_blank"><img src="trangchu/image13.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 id="tensp3">AirPods Max Ear Cushions</h4>
+
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="text-center"> 
+            <img title="Mac-Center" src="trangchu/image14.jpg"/>
+            <img title="Mac-Center" src="trangchu/image15.jpg"/>
+            <img title="Mac-Center" src="trangchu/image16.jpg"/>
+        </div>
+
+
+        <!--<div class="gioithieu">
+            <hr>
+            <h4>Giới thiệu</h4>
+            <p><b>Mac Center</b> là một chuỗi các <a href="https://vi.wikipedia.org/wiki/B%C3%A1n_l%E1%BA%BB" target="_blank">cửa hàng bán lẻ</a> thuộc quyền sở hữu và được vận hành bởi <a href="https://vi.wikipedia.org/wiki/Apple_Inc.">Apple Inc</a>. Các cửa hàng bán nhiều sản phẩm khác nhau của Apple, bao gồm máy tính cá nhân <a href="https://vi.wikipedia.org/wiki/Macintosh">Mac</a>, điện thoại thông minh <a href="https://vi.wikipedia.org/wiki/IPhone">iPhone</a>, máy tính bảng <a href="https://vi.wikipedia.org/wiki/IPad">iPad</a>, máy đa phương tiện cầm tay <a href="https://vi.wikipedia.org/wiki/IPod">iPod</a>, đồng hồ thông minh <a href="https://vi.wikipedia.org/wiki/Apple_Watch">Apple Watch</a>, máy đa phương tiện kỹ thuật số <a href="https://vi.wikipedia.org/wiki/Apple_TV">Apple TV</a>, <a href="https://vi.wikipedia.org/wiki/Ph%E1%BA%A7n_m%E1%BB%81m">phần mềm</a> và phụ kiện chọn lọc của bên thứ ba.
+                Các Apple Store đầu tiên ban đầu được mở như hai địa điểm vào tháng 5 năm 2001 bởi <a href="https://vi.wikipedia.org/wiki/T%E1%BB%95ng_gi%C3%A1m_%C4%91%E1%BB%91c_%C4%91i%E1%BB%81u_h%C3%A0nh">CEO</a> lúc bấy giờ <a href="https://vi.wikipedia.org/wiki/Steve_Jobs">Steve Jobs</a>, sau nhiều năm cố gắng thử mô hình <a href="https://vi.wikipedia.org/wiki/C%E1%BB%ADa_h%C3%A0ng_b%C3%AAn_trong_c%E1%BB%ADa_h%C3%A0ng">cửa hàng bên trong cửa hàng</a> nhưng thất bại. Nhận thấy cải tiến việc trưng bày bán lẻ các sản phẩm của công ty là rất cần thiết, năm 1997, ông bắt đầu nỗ lực cải tổ chương trình bán lẻ để cải thiện mối quan hệ với người tiêu dùng và thuê <a href="https://vi.wikipedia.org/w/index.php?title=Ron_Johnson_(doanh_nh%C3%A2n)&action=edit&redlink=1" style="color: brown;">Ron Johnson</a> vào năm 2000. Jobs đã khởi động lại cửa hàng trực tuyến Apple vào năm 1997 và mở hai cửa hàng vật lý đầu tiên vào năm 2001. Các phương tiện truyền thông ban đầu suy đoán rằng Apple sẽ thất bại, nhưng các cửa hàng của họ lại rất thành công, cho thấy ở việc vượt qua doanh số cạnh tranh của các cửa hàng gần đó và trong vòng ba năm đạt 1 tỷ đô la Mỹ doanh số hàng năm, trở thành nhà bán lẻ làm điều đó nhanh nhất trong lịch sử. Trong những năm qua, Apple đã mở rộng số lượng địa điểm bán lẻ và phạm vi địa lý của họ, với 506   cửa hàng trên 25 quốc gia trên toàn thế giới tính đến năm 2018. Doanh số sản phẩm cao đã đưa Apple vào hàng ngũ các cửa hàng bán lẻ hàng đầu, với doanh số hơn 16 tỷ đô la Mỹ trên toàn cầu năm 2011.
+            </p>
+        </div>
+        <div class="hotro" >
+            <ul class="hotro1">
+                <li>
+                    <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                    <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                    <p>Quận Gò Vấp - 4 Quang Trung, Phường 10.<br></p>
+                    <p>Quận 1 - 26 Lý Tự Trọng, Phường Bến Nghé.<br></p>
+                    <p>Quận Tân Phú - Nguyễn Sơn, Phường Phú Thọ.<br></p>
+                    <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                    <p>Quận 1 - 358 Central Market Lê Lai, Phường Tân Định.<br></p>  
+                </li>
+
+                <li>
+                    <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                    <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                    <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                    <p>Hai Bà Trưng - 68-32 Tầng 7 Vincom Bà Triệu.<br></p>
+                    
+                </li>
+                <li>
+                    <h3> Mạng xã hội</h3>
+                    <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                    <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                    <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                </li>
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+            </ul>
+            <ul class="hotro3">
+                <a id="hotro2" href="mailto:2051052046hoang@ou.edu.vn?subject=vui long lien he&body=Welcome apple - center..."><i class="fas fa-envelope"></i> mac-center@gmail.com</a>
+            </ul>
+            
+        </div>-->
+        <hr id="gachchan">
+        <div class="note">
+            <div class="note1">
+                <p><b>APPLE STORE</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>MacBook Pro</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>iMac</p></a>
+                <a href="http://127.0.0.1:5501/btLon4.html#"><p>iPhone</p></a>
+                <a href="http://127.0.0.1:5501/btLon4.html#"><p>iPad, iPad Pro</p></a>
+                <a href="http://127.0.0.1:5501/btLon5.html"><p>Apple Watch</p></a>
+                <a href="http://127.0.0.1:5501/btLon5.html"><p>AirPods</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>ACCESSORIES</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mac Accessories</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mice & Keyboards</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Mousepads</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Health & Home Devices</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Webcam & Headset</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Stand for MacBook</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>AUDIO SYSTEM</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>JBL</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Bose</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Sony</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Ultimate Ears</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#" ><p>Harman Kardon</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Marshall</p></a>
+            </div>
+
+            
+            <div class="note1">
+                <p><b>HEADPHONE</b></p>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe JBL</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Bose</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Skull Candy</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Audio Technica</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#" ><p>Tai nghe Sudio</p></a>
+                <a href="http://127.0.0.1:5501/btLon2.html#"><p>Tai nghe Jabra</p></a>
+            </div>
+
+
+            <div class="note1">
+                <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                <a href=""><p>Chính sách bảo hành</p></a>
+                <a href=""><p>Chính sách đổi trả</p></a>
+                <a href=""><p>Chính sách bảo mật thông tin</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Dịch vụ sửa chữa</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Vận chuyển - Thanh toán</p></a>
+                <a href="http://127.0.0.1:5501/btlon3.html"><p>Liên hệ</p></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="gioithieu">
+            <div class=logogt1>
+                <div class="logogt">
+                    <img src="logo/logo_gioithieu.png" />
+                </div>
+                <div class="textgt">
+                    <p>Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                    <p>Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                </div>
+            </div>
+            
+               
+            <div class="hotro" >
+                <ul class="hotro1">
+                    <li>
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                        <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                        <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                        <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                    </li>
+                    
+                    <li>
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                        <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                        <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                    </li>
+                    <li>
+                        <h3> Mạng xã hội</h3>
+                        <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                        <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                        <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                </ul>
+                <!--<ul class="hotro3">
+                    <a id="hotro2" href="mailto:2051052046hoang@ou.edu.vn?subject=vui long lien he&body=Welcome apple - center..."><i class="fas fa-envelope"></i> mac-center@gmail.com</a>
+                </ul>-->
+                <div class="icongt">
+                    <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
